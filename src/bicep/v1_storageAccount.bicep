@@ -1,7 +1,7 @@
 targetScope = 'resourceGroup'
 
 resource sto 'Microsoft.Storage/storageAccounts@2021-08-01' = {
-  name: 'stobicepdemo'
+  name: 'stoipsbicepdemo'
   location: resourceGroup().location
   sku: {
     name: 'Standard_LRS'
