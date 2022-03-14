@@ -1,6 +1,6 @@
 targetScope = 'resourceGroup'
 
-resource sto 'Microsoft.Storage/storageAccounts@2021-08-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   name: 'stoipsbicepdemo'
   location: resourceGroup().location
   sku: {

@@ -34,3 +34,5 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
     }]
   }
 }
+
+output connectionString string = 'DefaultEndpointsProtocol=https;AccountName=${storageAccount.name};AccountKey=${first(listkeys(storageAccount.id, '2021-04-01').keys).value};EndpointSuffix=core.windows.net'

@@ -8,7 +8,7 @@ param location string = resourceGroup().location
 param sku string = 'Standard_LRS'
 param name string = 'stoipsbicepdemo'
 
-resource sto 'Microsoft.Storage/storageAccounts@2021-08-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   name: name
   location: location
   sku: {

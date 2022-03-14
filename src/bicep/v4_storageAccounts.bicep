@@ -9,7 +9,7 @@ param sku string = 'Standard_LRS'
 param name string = 'stoipsbicepdemo'
 param count int
 
-resource storages 'Microsoft.Storage/storageAccounts@2021-08-01' = [for i in range(1, count): {
+resource storageAccounts 'Microsoft.Storage/storageAccounts@2021-08-01' = [for i in range(1, count): {
   name: '${name}${i}'
   location: location
   sku: {
