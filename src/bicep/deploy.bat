@@ -10,3 +10,5 @@ call az deployment group create --name dep-bicep-demo-sto -g rg-bicep-demo --tem
 call az deployment sub create --name dep-bicep-demo-rg --location westeurope --template-file v3_resourceGroup.bicep --parameters location=westeurope
 
 call az deployment sub create --name dep-bicep-demo-rg --location westeurope --template-file v4_resourceGroup.bicep --parameters location=westeurope deployStorage=true
+
+call az deployment sub create --name dep-bicep-demo-rg --location westeurope --template-file v5_resourceGroup.bicep --parameters location=westeurope deployStorage=true
